@@ -1,0 +1,31 @@
+#navcontainer{
+    height: 5vh;
+    width: 100%;
+    display: grid;
+
+    grid-template-areas: 
+    "h h h h";
+     background-color: #E7FEFF;
+      padding: 1rem;
+      font-weight: bold;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+  }
+  
+  
+  .nav{
+    font-family: 'Courier New', monospace;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    color:rgb(67, 126, 133);
+    height: 50%;
+    width: 200px;
+    padding-right: 2rem;
+  }
+  span{
+    color:rgb(67, 126, 133);
+  }
+  
+  
+  

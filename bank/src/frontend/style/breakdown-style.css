@@ -1,0 +1,27 @@
+#containerbreakdwon{
+    width: 80vh;
+    display: grid;
+    grid-template-areas: 
+    "m";
+     background-color: white;
+      margin:2rem;
+      padding: 1rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+  }
+  
+  
+  .breakdwon{
+    height: 200%;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    font-family: 'Courier New', monospace;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:rgb(67, 126, 133);
+  }
+  
+  
+  
+  
+  
