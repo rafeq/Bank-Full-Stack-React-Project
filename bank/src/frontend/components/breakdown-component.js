@@ -5,7 +5,7 @@ function Breakdown() {
     const [breakDownObj, setBreakDownObj] = useState({});
 
     function getTransactions() {
-        fetch("http://localhost:4000/amountSum")
+        fetch("http://localhost:4000/sumOfTransactionsPerCategory")
             .then((res) => res.json())
             .then((data) => setBreakDownObj(data));
     }
@@ -27,36 +27,3 @@ function Breakdown() {
     )
 }
 export default Breakdown;
-
-/*
-    const [transactions, setTransactions] = useState("");
-    const [breakDownObj, setBreakDownObj] = useState({});
-
-    function getTransactions() {
-        fetch("http://localhost:4000/transactions")
-            .then((res) => res.json())
-            .then((data) => setTransactions(data));
-    }
-    useEffect(() => {
-        setTimeout(getTransactions, 1000)
-    }, [transactions]);
-
-    function calculateBreakDown() {
-        let breakDownObjTemp = {}
-        for (const transaction of transactions) {
-            breakDownObjTemp[transaction.category] = 0
-        }
-        for (const transaction of transactions) {
-            breakDownObjTemp[transaction.category] += transaction.amount
-        }
-
-        setBreakDownObj(breakDownObj => ({
-            ...breakDownObj,
-            ...breakDownObjTemp
-        }));
-    }
-
-    useEffect(() => {
-        setTimeout(calculateBreakDown, 1000)
-    }, [breakDownObj]);
-    */

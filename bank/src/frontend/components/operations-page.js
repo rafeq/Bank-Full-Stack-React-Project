@@ -12,4 +12,3 @@ function Operations() {
 }
 
 export default Operations;
-//<AddOperation/>
